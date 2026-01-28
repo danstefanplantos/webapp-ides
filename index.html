@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simulatore di Reati Informatici</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Simulatore di reati informatici</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Cos'è?</h2>
+      <p>Questa webapp permette di esplorare alcuni scenari realistici legati all'uso delle tecnologie digitali, per capire quando un comportamento online può costituire un reato informatico.</p>
+    </section>
+
+    <section>
+      <h2>Scegli uno scenario</h2>
+      <div id="scenarioBox" class="scenario-box"></div>
+    </section>
+
+    <section id="result" class="result">
+      <h2 id="res-title"></h2>
+
+      <p class="label">Descrizione:</p>
+      <p id="res-description"></p>
+
+      <p class="label">Reato:</p>
+      <p id="res-crime"></p>
+
+      <p class="label">Sanzione:</p>
+      <p id="res-consequences"></p>
+
+      <p class="label">Riferimento normativo:</p>
+      <p id="res-law"></p>
+
+      <p class="label">Spiegazione giuridica:</p>
+      <p id="res-explanation"></p>
+
+    </section>
+
+  </main>
+  <footer>Progetto per <i>"Informatica, Diritto e Società"</i> &#126; Plantos Dan Stefan</footer>
+  <script src="app.js"></script>
+</body>
+</html>
