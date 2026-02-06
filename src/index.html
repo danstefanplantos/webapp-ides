@@ -1,0 +1,129 @@
+<!--
+---- Nome file: index.html
+---- Autore: Plantos Dan Stefan
+---- Data: 06.02.2026
+-->
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simulatore di Reati Informatici</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <img 
+      src="file://C:/Users/stefa/Desktop/webapp-ides/img/logo.png" 
+      alt="Simulatore di reati informatici"
+      class="site-logo"
+    >
+    <h1>Simulatore di reati informatici</h1>
+  </header>
+
+  <div class="layout">
+
+  <!-- Pubblicità sinistra -->
+  <aside class="ads ads-left">
+    <div class="ad-box">
+      <p class="ad-title">Contenuto sponsorizzato</p>
+      <p class="ad-text">
+        Manuale di <strong>Diritto Penale</strong><br>
+        Parte generale e speciale
+      </p>
+      <a href="#" class="ad-link">Scopri di più</a>
+    </div>
+
+    <div class="ad-box">
+      <p class="ad-title">Formazione</p>
+      <p class="ad-text">
+        Corso online in<br>
+        <strong>Cybersecurity</strong>
+      </p>
+      <a href="#" class="ad-link">Iscriviti ora</a>
+    </div>
+  </aside>
+
+  <main class="content">
+    <section>
+      <h2>Cos'è?</h2>
+      <p>Questa webapp permette di esplorare alcuni scenari realistici legati all'uso delle tecnologie digitali, per capire quando un comportamento online può costituire un reato informatico.</p>
+    </section>
+
+    <section>
+      <h2>Fonti?</h2>
+      <p>Questa webapp permette di esplorare alcuni scenari realistici legati all'uso delle tecnologie digitali, per capire quando un comportamento online può costituire un reato informatico.</p>
+      <p>
+        <ol>
+          <li><a href="https://www.normattiva.it/">Normattiva</a></li>
+          <li><a href="https://www.brocardi.it/">Brocardi</a></li>
+          <li><a href="https://eur-lex.europa.eu/IT/legal-content/summary/convention-on-cybercrime.html">Convenzione di Budapest sulla criminalità informatica</a></li>
+        </ol>
+      </p>
+    </section>
+
+    <section>
+      <h2>Scegli uno scenario</h2>
+      <div class="search-container">
+        <input 
+          type="text" 
+          id="searchInput" 
+          placeholder="Cerca (es.: 'phishing', 'email', 'sito')"
+          aria-label="Cerca uno scenario"
+        >
+        <span class="search-icon">🔍</span>
+      </div>
+      <div id="scenarioBox" class="scenario-box"></div>
+    </section>
+
+    <section id="result" class="result">
+      <h2 id="res-title"></h2>
+
+      <p class="label">Descrizione:</p>
+      <p id="res-description"></p>
+
+      <p class="label">Reato:</p>
+      <p id="res-crime"></p>
+
+      <p class="label">Sanzione:</p>
+      <p id="res-consequences"></p>
+
+      <p class="label">Riferimento normativo:</p>
+      <p id="res-law"></p>
+
+      <p class="label">Spiegazione giuridica:</p>
+      <p id="res-explanation"></p>
+
+    </section>
+
+  </main>
+
+  <!-- Pubblicità destra -->
+  <aside class="ads ads-right">
+    <div class="ad-box">
+      <p class="ad-title">Risorse utili</p>
+      <p class="ad-text">
+        Codice Penale<br>
+        sempre aggiornato
+      </p>
+      <a href="#" class="ad-link">Consulta</a>
+    </div>
+
+    <div class="ad-box">
+      <p class="ad-title">Università</p>
+      <p class="ad-text">
+        Master in<br>
+        <strong>Diritto e Informatica</strong>
+      </p>
+      <a href="#" class="ad-link">Info</a>
+    </div>
+  </aside>
+</div>
+  
+  <footer><i>“Le informazioni hanno scopo didattico e non sostituiscono una consulenza legale.”</i></footer>
+  <script src="app.js"></script>
+</body>
+</html>

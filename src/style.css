@@ -1,0 +1,234 @@
+/*
+-- Nome file: style.css
+-- Autore: Plantos Dan Stefan
+-- Data: 06.02.2026
+*/
+
+
+/* RESET BASE */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #1f1f1f;
+  line-height: 1.6;
+}
+
+/* HEADER */
+.site-header {
+  background: #8b0000;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin: 2rem 0 1.5rem;
+  border-bottom: 4px solid #5e0000;
+}
+
+.site-logo {
+  max-width: 100px;
+  height: auto;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  opacity: 0.9;
+  font-size: 1.05rem;
+}
+
+/* CONTENUTO */
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2.5rem 1.5rem;
+}
+
+section {
+  background: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+h2 {
+  color: #8b0000;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+/* SCENARI */
+.scenario-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.scenario-btn {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  padding: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+  transition: all 0.15s ease;
+}
+
+.scenario-btn:hover {
+  background: #8b0000;
+  color: white;
+  border-color: #8b0000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* RISULTATO */
+.result {
+  display: none;
+  border-left: 6px solid #8b0000;
+}
+
+#res-title {
+  color: #8b0000;
+  margin-bottom: 0.5rem;
+}
+
+.label {
+  margin-top: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+#res-law {
+  font-style: italic;
+  color: #444;
+}
+
+/* FOOTER */
+footer {
+  background: #1f1f1f;
+  color: #ccc;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  section {
+    padding: 1.4rem;
+  }
+}
+
+/* BARRA DI RICERCA */
+.search-container {
+  position: relative;
+  max-width: 400px;
+  margin: 2rem auto;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 12px 40px 12px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.search-container input:focus {
+  border-color: #8b0000;
+  box-shadow: 0 0 0 2px rgba(139, 0, 0, 0.15);
+}
+
+.search-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* PUBBLICITA' */
+.layout {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* colonne pubblicità */
+.ads {
+  position: sticky;
+  top: 1rem;
+  align-self: start;
+}
+
+/* box pubblicitari */
+.ad-box {
+  border: 1px solid #ddd;
+  background-color: #fafafa;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+}
+
+.ad-title {
+  font-size: 0.75rem;
+  color: #777;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.ad-text {
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.ad-link {
+  color: #8b0000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.ad-link:hover {
+  text-decoration: underline;
+}
+
+/* contenuto centrale */
+.content {
+  background-color: #fff;
+}
+
+/* PUBBLICITA' - VERSIONE RESPONSIVE*/
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+  .ads {
+    display: none;
+  }
+}
